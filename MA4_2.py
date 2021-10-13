@@ -20,14 +20,14 @@ def main():
 	print(resultpy)
 	end1 = pc()
 
-	print(f"fib python took {round(end1-start1, 5)} seconds")
+	print(f"fib python took {round(end1-start1, 5)} seconds")#Took approx 27.5 minutes
 
 	start2 = pc()
 	resultcpp = f.fib_cpp()
 	print(resultcpp)
 	end2 = pc()
 
-	print(f"fib c++ took {round(end2-start2, 5)} seconds")
+	print(f"fib c++ took {round(end2-start2, 5)} seconds")#Took approx 1 minute
 
 if __name__ == '__main__':
 	main()

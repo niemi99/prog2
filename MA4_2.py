@@ -29,7 +29,8 @@ def main():
 
 	for j in array:
 		start2 = pc()
-		f.fib_cpp(j)
+		g = Integer(j)
+		g.fib_cpp()
 		end2 = pc()
 		time_cpp += [end2-start2]
 

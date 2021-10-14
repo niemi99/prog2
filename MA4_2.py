@@ -35,22 +35,23 @@ def main():
 		time_cpp.append(end2-start2)
 
 	plt.plot(array, time_py, 'r-', array, time_cpp, 'b-')
+	plt.savefig("Fib 25-40 plotted against time, c++ vs python")
 	plt.show()
 
 
-	start1 = pc()
-	resultpy = fib_py(47)
+	start1p = pc()
+	resultpy = fib_py(7)
 	print(resultpy)
-	end1 = pc()
+	end1p = pc()
 
-	print(f"fib python took {round(end1-start1, 5)} seconds")#Took approx 27.5 minutes
+	print(f"fib python took {round(end1p-start1p, 5)} seconds")#Took approx 27.5 minutes
 
-	start2 = pc()
+	start2c = pc()
 	resultcpp = f.fib_cpp()
 	print(resultcpp)
-	end2 = pc()
+	end2c = pc()
 
-	print(f"fib c++ took {round(end2-start2, 5)} seconds")#Took approx 1 minute
+	print(f"fib c++ took {round(end2c-start2c, 5)} seconds")#Took approx 1 minute
 
 if __name__ == '__main__':
 	main()
